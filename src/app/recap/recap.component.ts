@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Pollution } from '../pollution.model';
+
 
 @Component({
   selector: 'app-recap',

@@ -53,6 +53,9 @@
     <button type="submit" [disabled]="pollutionForm.invalid">Déclarer</button>
   </form>
 </div>
-
-<app-recap *ngIf="submitted" [pollution]="pollutionData"></app-recap>
+<div *ngIf="submitted" class="confirmation">
+  Pollution déclarée avec succès !
+  <br />
+  <button (click)="resetForm()">Ajouter une nouvelle pollution</button>
+</div>
 
